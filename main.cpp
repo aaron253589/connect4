@@ -18,9 +18,18 @@
 #ifndef SOCKET_C
     #include "Serverlet.cpp"
 #endif
+#ifndef RESPONSE_H
+    #include "Response.h"
+#endif
+
+Response func(std::string s){
+    return Response();
+}
 
 int main()
 {
+    Router* r = new Router();
+    r->add(Router::HttpMethod::GET, "board", func);
     Serverlet socket = Serverlet();
     socket.socketFlow();
 //     setupLogger();

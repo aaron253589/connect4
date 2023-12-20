@@ -1,17 +1,15 @@
+#ifndef REQUEST_H
 #define REQUEST_H
-
-#ifndef ROUTER_H
-    #include "Router.h"
-#endif
 
 #include <string>
 #include <map>
+#include "Router.h"
 
 class Request{
     private:
     std::string path;
     std::string requestParams;
-        Router::HttpMethod method;
+    Router::HttpMethod method;
         std::map<std::string, std::string>* headers;
         std::string body;
     public:
@@ -22,3 +20,5 @@ class Request{
         Router::HttpMethod getMethod();
         Request(std::string rawRequest);
 };
+
+#endif

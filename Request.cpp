@@ -1,3 +1,4 @@
+#ifndef REQUEST_C
 #define REQUEST_C
 
 #ifndef REQUEST_H
@@ -61,3 +62,5 @@ std::string extractBody(std::string rawRequest){
    int offset = rawRequest.find("\n\n");
    return rawRequest.substr(offset+2,rawRequest.size());
 }
+
+#endif

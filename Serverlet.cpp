@@ -1,7 +1,10 @@
 // Server side C/C++ program to demonstrate Socket
 // programming
+#ifndef SERVERLET_C
 #define SERVERLET_C
-#include "Serverlet.h"
+#ifndef SERVERLET_H
+	#include "Serverlet.h"
+#endif 
 #include <netinet/in.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -295,3 +298,4 @@ int Serverlet::socketFlow(){
 	close(server_fd);
 	return 0;
 }
+#endif

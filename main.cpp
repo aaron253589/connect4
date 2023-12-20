@@ -1,3 +1,6 @@
+#ifndef MAIN
+#define MAIN
+
 #include <iostream>
 #include <stdio.h>
 
@@ -6,6 +9,7 @@
 #include <vector>
 #include <algorithm>
 #include <climits>
+#include "Router.h"
 #ifndef LOGGING
     #include "LoggingUtil.cpp"
 #endif
@@ -76,3 +80,4 @@ int main()
 //     }
 //     closeLogger();
 }
+#endif

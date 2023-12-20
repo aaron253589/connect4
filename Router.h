@@ -1,24 +1,21 @@
+#ifndef ROUTER_H
 #define ROUTER_H
 
-#ifndef RESPONSE_H
-  #include "Response.h"
-#endif
-
-#ifndef REQUEST_H
-    #include "Request.h"
-#endif
+#include "Response.h"
 
 #include <string>
 #include <functional>
 #include <map>
 
+class Request;
 
-class Router{
+ class Router{
     public:
       enum HttpMethod{GET, POST};
       void add(HttpMethod method, std::string path, Response(&func)(std::string));
       Response(&getCallBack(Request request))(std::string);
 
       private:
-        std::map<HttpMethod,std::map<std::string,Response(std::string)>> map;
+        std::map<HttpMethod,std::map<std::string,std::function<Response(std::string)>>> map;
 };
+#endif

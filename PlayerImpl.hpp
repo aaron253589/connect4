@@ -1,9 +1,12 @@
+#ifndef PLAYER_C
+#define PLAYER_C
+
+
 #ifndef PLAYER_H
 #include "Player.hpp"
 #endif
 #include <string>
 
-#define PLAYER_C
 #ifndef GAME_H
  #include "Game.hpp"
 #endif
@@ -24,3 +27,5 @@ class PlayerImpl : public virtual Player{
         bool nextMove();
         bool hasPlayerWon();
         };
+
+#endif

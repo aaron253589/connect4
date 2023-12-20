@@ -1,7 +1,8 @@
+#ifndef LOGGING
+#define LOGGING
 #include <iostream>
 #include <fstream>
 #include <thread>
-#define LOGGING
 #ifndef GAME_H
 #include "Game.hpp"
 #endif
@@ -47,3 +48,4 @@ myfile<<"B: "<<blueBoard<<std::endl;
         myfile << std::endl;
     }
 }
+#endif

@@ -1,9 +1,11 @@
-#include <vector>
+#ifndef GAME_H
 #define GAME_H
 
 #ifndef PLAYER_H
 #include "Player.hpp"
 #endif
+#include <vector>
+
 
 constexpr auto BOARD_X_DIMENTION = 7;
 constexpr auto BOARD_Y_DIMENTION = 6;
@@ -18,3 +20,4 @@ class Game{
        virtual void display() = 0;
        virtual bool hasPlayerWon(uint64_t board) = 0;
 };
+#endif

@@ -1,3 +1,4 @@
+#ifndef SERVERLET_H
 #define SERVERLET_H
 
 #ifndef RESPONSE_H
@@ -16,3 +17,4 @@ class Serverlet{
         void createListener();
         void sendResponse(Response response);
 };
+#endif

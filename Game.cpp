@@ -1,4 +1,4 @@
-
+#ifndef GAME_C
 #define GAME_C
 #ifndef PLAYER_C
 #include "PlayerImpl.cpp"
@@ -180,3 +180,5 @@ bool GameImpl::hasPlayerWon(uint64_t board){
     }
 
     return false;}
+
+    #endif

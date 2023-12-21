@@ -1,4 +1,4 @@
-
+#ifndef PLAYER_H
 #define PLAYER_H
 
 class Player{
@@ -8,3 +8,4 @@ class Player{
         virtual bool nextMove() = 0;
         virtual bool hasPlayerWon() = 0;
         };
+#endif

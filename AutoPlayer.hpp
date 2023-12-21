@@ -1,11 +1,8 @@
+#ifndef AUTO_PLAYER
 #define AUTO_PLAYER
 
-#ifndef PLAYER_C
     #include "PlayerImpl.cpp"
-#endif
-#ifndef GAME_H
   #include "Game.hpp"
-#endif
 
 class AutoPlayer : public PlayerImpl{
     private:
@@ -19,3 +16,4 @@ class AutoPlayer : public PlayerImpl{
         bool nextMove();
         AutoPlayer(std::string* playerName, Game& game);
         };
+#endif

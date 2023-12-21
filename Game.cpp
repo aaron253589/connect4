@@ -1,18 +1,11 @@
 #ifndef GAME_C
 #define GAME_C
-#ifndef PLAYER_C
+
 #include "PlayerImpl.cpp"
-#endif 
-#ifndef AUTO_PLAYER
 #include "AutoPlayer.cpp"
-#endif
 #include <iostream>
-#ifndef GAME_H
 #include "Game.hpp"
-#endif
-#ifndef LOGGING
-#include "LoggingUtil.hpp"
-#endif
+#include "LoggingUtil.cpp"
 
 class GameImpl : public virtual Game{
     private:

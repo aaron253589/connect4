@@ -1,3 +1,6 @@
+#ifndef PLAYER_IMPL_C
+#define PLAYER_IMPL_C
+
 #include "PlayerImpl.hpp"
         
          PlayerImpl::PlayerImpl(std::string* name, Game& game):playerName(name), game(game), board(0){}
@@ -26,3 +29,4 @@ void PlayerImpl::setBoard(uint64_t newBoard){
     this->board = newBoard;
 }
 
+#endif

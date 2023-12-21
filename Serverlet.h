@@ -1,13 +1,8 @@
 #ifndef SERVERLET_H
 #define SERVERLET_H
 
-#ifndef RESPONSE_H
     #include "Response.h"
-#endif
-
-#ifndef ROUTER_H
     #include "Router.h"
-#endif
 
 class Serverlet{
     private:

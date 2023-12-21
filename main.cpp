@@ -10,21 +10,11 @@
 #include <algorithm>
 #include <climits>
 #include "Router.h"
-#ifndef LOGGING
     #include "LoggingUtil.cpp"
-#endif
-#ifndef GAME_C
     #include "Game.cpp"
-#endif
-#ifndef PLAYER_C
     #include "PlayerImpl.hpp"
-#endif
-#ifndef SOCKET_C
     #include "Serverlet.cpp"
-#endif
-#ifndef RESPONSE_H
     #include "Response.h"
-#endif
 
 Response func(std::string s){
     return Response();

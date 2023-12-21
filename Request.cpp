@@ -1,9 +1,7 @@
 #ifndef REQUEST_C
 #define REQUEST_C
 
-#ifndef REQUEST_H
   #include "Request.h"
-#endif
 
 Request::Request(std::string rawRequest){
     int indexAfterMethod = rawRequest.find(" ");

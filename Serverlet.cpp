@@ -2,9 +2,7 @@
 // programming
 #ifndef SERVERLET_C
 #define SERVERLET_C
-#ifndef SERVERLET_H
 	#include "Serverlet.h"
-#endif 
 #include <netinet/in.h>
 #include <stdio.h>
 #include <stdlib.h>

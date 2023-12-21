@@ -1,9 +1,7 @@
 #ifndef GAME_H
 #define GAME_H
 
-#ifndef PLAYER_H
 #include "Player.hpp"
-#endif
 #include <vector>
 
 

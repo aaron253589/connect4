@@ -2,14 +2,9 @@
 #define PLAYER_C
 
 
-#ifndef PLAYER_H
 #include "Player.hpp"
-#endif
 #include <string>
-
-#ifndef GAME_H
- #include "Game.hpp"
-#endif
+#include "Game.hpp"
 
 
 class PlayerImpl : public virtual Player{
